@@ -7,7 +7,7 @@ author:     "しんのすけ"
 image: "images/shinnosuke_2.JPG"
 tags:
     - しんのすけ
-URL: "/2017/11/07/istio-traffic-shifting/"
+URL: "/test/"
 showtoc: false
 draft: false
 ---
