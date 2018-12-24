@@ -2,7 +2,7 @@
 layout:     post
 title:      "テスト投稿だぞ"
 subtitle:   "hogehogehoge"
-date:     2017-11-07
+date:     2018-12-24
 author:     "しんのすけ"
 image: "images/shinnosuke_2.JPG"
 tags:
