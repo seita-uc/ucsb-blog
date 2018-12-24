@@ -1,3 +1,9 @@
 [submodule "themes/hugo-material-blog"]
 	path = themes/hugo-material-blog
 	url = git@github.com:Xzya/hugo-material-blog.git
+[submodule "theme/hugo-theme-cleanwhite"]
+	path = theme/hugo-theme-cleanwhite
+	url = git@github.com:zhaohuabing/hugo-theme-cleanwhite.git
+[submodule "themes/themes/hugo-theme-cleanwhite"]
+	path = themes/themes/hugo-theme-cleanwhite
+	url = git@github.com:zhaohuabing/hugo-theme-cleanwhite.git
