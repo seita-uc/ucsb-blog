@@ -4,7 +4,7 @@ title:      "テスト投稿だぞ"
 subtitle:   "hogehogehoge"
 date:     2018-12-24
 author:     "しんのすけ"
-image: "images/shinnosuke_2.JPG"
+image: "images/campus-lagoon.jpg"
 tags:
     - しんのすけ
 URL: "/test/"
