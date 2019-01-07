@@ -7,7 +7,6 @@ author:     "しんのすけ"
 image: "images/campus-lagoon.jpg"
 tags:
     - しんのすけ
-URL: "/test/"
 showtoc: false
 draft: false
 ---
