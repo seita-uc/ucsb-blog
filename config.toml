@@ -16,9 +16,9 @@ home = ["HTML", "RSS", "Algolia"]
 [params]
   header_image = "images/campus-lagoon.jpg"
   SEOTitle = "UCSB Exchange blog | UCSB 留学生ブログ"
-  description = "おらしんのすけだぞ"
-  keyword = ""
-  slogan = "おらしんのすけだぞ"
+  description = "UCSB 留学生ブログ"
+  keyword = "UCSB"
+  slogan = "UCSB留学wiki"
 
   image_404 = "img/404-bg.jpg"
   title_404 = "page not found"
@@ -35,6 +35,7 @@ home = ["HTML", "RSS", "Algolia"]
   algolia_apiKey = ""
 
   # Sidebar settings
+  sidebar_about = false
   sidebar_about_description = "おらしんのすけだぞ"
   sidebar_avatar = "images/shinnosuke.jpg"      # use absolute URL, seeing it's used in both `/` and `/about/`
 
@@ -51,14 +52,14 @@ home = ["HTML", "RSS", "Algolia"]
 
   [params.social]
   rss            = true 
-  email          = "youemail@gmail.com"
+  email          = "c201552k@gmail.com"
   #facebook      = "full profile url in facebook"
   #googleplus    = "full profile url in googleplus"
   #twitter       = "full profile url in twitter"
   #linkedin       = "full profile url in linkedin"
   #stackoverflow  = "full profile url in stackoverflow"
   #instagram     = "full profile url in instagram"
-  github         = "full profile url in github"
+  github         = "https://github.com/seita-uc/ucsb-blog"
 
   friends = true
   bookmarks = true 
