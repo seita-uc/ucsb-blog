@@ -1,14 +1,14 @@
 ---
-layout:     post
-title:      "テスト投稿だぞ"
-subtitle:   "hogehogehoge"
-date:     2018-12-24
-author:     "しんのすけ"
-image: "images/campus-lagoon.jpg"
+layout: post
+title: テスト投稿だぞ
+subtitle: hogehogehoge
+date: 2018-12-24T00:00:00.000Z
+author: しんのすけ
+image: images/campus-lagoon.jpg
 tags:
-    - しんのすけ
+  - しんのすけ
 showtoc: false
-draft: false
+draft: true
 ---
 
 埼玉県春日部市を舞台にしんちゃんこと野原しんのすけとその家族を中心に巻き起こるドタバタコメディー。 
