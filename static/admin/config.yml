@@ -21,6 +21,7 @@ collections:
       - {label: "Author", name: "author", widget: "string"}
       - {label: "Featured Image", name: "image", widget: "image"}
       - {label: "Tags", name: "tags", widget: "list"}
+      - {label: "Categories", name: "categories", widget: "select", options: ["Tips", "Study", "Life"]}
       - {label: "ShowTOC", name: "showtoc", widget: "boolean", default: false}
       - {label: "Draft", name: "draft", widget: "boolean", default: true}
       - {label: "Body", name: "body", widget: "markdown"}

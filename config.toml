@@ -63,7 +63,7 @@ home = ["HTML", "RSS", "Algolia"]
 
   friends = true
   bookmarks = true 
-  about_me = false
+  about_me = true
 
   [[params.friend_link]]
   title = "Linda的博客"
