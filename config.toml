@@ -42,6 +42,8 @@ home = ["HTML", "RSS", "Algolia"]
   featured_tags = false
   featured_condition_size = 2 
 
+  about_me = true
+
   # We need a proxy to access Disqus api in China
   disqus_proxy = ""
   disqus_site = ""
