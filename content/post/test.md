@@ -7,6 +7,7 @@ author: しんのすけ
 image: images/campus-lagoon.jpg
 tags:
   - しんのすけ
+categories: Life
 showtoc: false
 draft: true
 ---
