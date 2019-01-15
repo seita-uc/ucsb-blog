@@ -4,6 +4,7 @@ title: About
 showtoc: false
 draft: false
 ---
+# About
 
 {{< figure src="/images/shinnosuke.jpg" class="center">}}
 
