@@ -1,4 +1,4 @@
-.intro-header .site-heading{
+.intro-header .site-heading {
   /*padding: 85px 0px 55px;*/
   height: 354px;
 }
@@ -15,8 +15,14 @@
 }
 
 @media screen and (max-width: 559px) {
-  .site-heading h1, .post-heading h1 {
+  .post-heading h1 {
     font-size: 40px !important;
+    font-weight: 500 !important;
+  }
+
+  .site-heading h1, .post-heading h1 {
+    margin-top: 35px !important;
+    font-size: 45px !important;
     font-weight: 500 !important;
   }
 }
