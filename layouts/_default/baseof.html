@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="{{ .Site.LanguageCode }}">
 <head>{{ partial "head.html" . }}</head>
-{{ partial "nav.html" . }}
+{{ partialCached "nav.html" . }}
 <!-- Page Header -->
 {{ block "header" .}}
 
@@ -33,6 +33,6 @@ header.intro-header{
 {{ block "main" . }}
 {{ end }}
 
-{{ partial "footer.html" . }}
+{{ partialCached "footer.html" . }}
 </body>
 </html>

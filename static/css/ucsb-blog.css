@@ -34,4 +34,7 @@
   }
 }
 
+#disqus-comment div {
+  margin-top: 30px !important;
+} 
 
