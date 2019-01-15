@@ -4,6 +4,16 @@
 {{ partial "nav.html" . }}
 <!-- Page Header -->
 {{ block "header" .}}
+
+<style type="text/css">
+header.intro-header{
+    /*background: radial-gradient(transparent, rgba(0,0,0,.5)) fixed, url('{{ if .Params.image }}{{ .Params.image | relURL }}{{ else }}{{ .Site.Params.header_image | relURL}}{{ end }}') no-repeat center center;*/
+    background: #0bd url('{{ if .Params.image }}{{ .Params.image | absURL }}{{ else }}{{ .Site.Params.header_image | absURL}}{{ end }}') no-repeat center;
+    background-blend-mode: multiply;
+    background-size: cover;
+}
+</style>
+
 <header class="intro-header" style="background-image: url('{{ .Site.Params.header_image | relURL }}')">
     <div class="container">
         <div class="row">
