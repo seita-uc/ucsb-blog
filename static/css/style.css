@@ -75,8 +75,8 @@ img.article-banner{
   height: 200px; 
   margin: 0 auto auto 0;
   -moz-border-radius: 0px;
-  -webkit-border-radius: 5px 5px 0px 0px;
-  border-radius: 5px 5px 0px 0px; 
+  -webkit-border-radius: 7px 7px 0px 0px;
+  border-radius: 7px 7px 0px 0px; 
 }
 
 h2.post-title {
@@ -103,13 +103,9 @@ h2.post-title {
 div.post-preview {
   border: solid 1px;/*線*/
   border-color: #bfbfbf;
-  border-radius: 5px;/*角の丸み*/
+  border-radius: 8px;/*角の丸み*/
   margin-bottom: 25px;
   padding-top: 0px;
-}
-
-div.row {
-  margin-top: 10px;
 }
 
 div.post-content-preview {
@@ -131,3 +127,22 @@ p.post-meta {
   padding-left: 10px;
   padding-right: 10px;
 }
+
+@media screen and (max-width: 559px) {
+  div.row {
+    margin-top: 25px;
+  }
+  div.row-search {
+    margin-top: 25px;
+  }
+}
+
+@media screen and (min-width: 560px) {
+  div.row {
+    margin-top: 10px;
+  }
+  div.row-search {
+    margin-top: 10px;
+  }
+}
+
