@@ -39,7 +39,6 @@ h1, h2, h3, h4, h5, h6 {
   text-shadow: 1px 1px 1px rgba(0,0,0,0.35)
 }
 
-
 @media screen and (max-width: 559px) {
   .post-heading h1 {
     font-size: 40px !important;
@@ -64,7 +63,14 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 30px !important;
 } 
 
-img.article-banner{
+.eyecatch {
+  overflow:		hidden;
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 7px 7px 0px 0px;
+  border-radius: 7px 7px 0px 0px; 
+}
+
+.eyecatch img {
   width: 100%;
   /*padding: 20px 0 0 0px;*/
   /*display: block;*/
@@ -77,6 +83,44 @@ img.article-banner{
   -moz-border-radius: 0px;
   -webkit-border-radius: 7px 7px 0px 0px;
   border-radius: 7px 7px 0px 0px; 
+  transition: ease-in-out .2s;
+}
+
+.eyecatch img:hover {
+  -webkit-transform:	scale(1.2);
+  transform:		scale(1.2);
+}
+
+/*.eyecatch img::after {*/
+  /*width: 100%;*/
+  /*padding: 20px 0 0 0px;*/
+  /*display: block;*/
+  /*display: block;*/
+  /*max-width: 100%;*/
+  /*object-position: 0px 60%;*/
+  /*object-fit: cover;*/
+  /*height: 200px; */
+  /*margin: 0 auto auto 0;*/
+  /*-moz-border-radius: 0px;*/
+  /*-webkit-border-radius: 7px 7px 0px 0px;*/
+  /*border-radius: 7px 7px 0px 0px; */
+  /*transition: ease-in-out .2s;*/
+  /*-webkit-transform:	scale(1.2);*/
+  /*transform:		scale(1.2);*/
+/*}*/
+
+div.post-preview {
+  border: solid 1px;/*線*/
+  border-color: #bfbfbf;
+  border-radius: 8px;/*角の丸み*/
+  margin-bottom: 25px;
+  padding-top: 0px;
+  box-shadow: 0 10px 10px -6px rgba(0,0,0,.25);
+}
+
+div.post-preview:hover {
+  opacity: 0.8;
+  box-shadow: 0 7px 7px -6px rgba(0,0,0,.25);
 }
 
 h2.post-title {
@@ -88,7 +132,7 @@ h2.post-title {
   margin-top: 15px;
 }
 
-.post-preview>.post-meta {
+.post-preview>a>.post-meta {
     font-family: Lora,'Times New Roman',serif;
     color: gray;
     font-size: 16px;
@@ -96,16 +140,8 @@ h2.post-title {
     padding-bottom: 0px;
 }
 
-.post-preview>p {
+.post-preview>a>p {
     margin: 15px 0;
-}
-
-div.post-preview {
-  border: solid 1px;/*線*/
-  border-color: #bfbfbf;
-  border-radius: 8px;/*角の丸み*/
-  margin-bottom: 25px;
-  padding-top: 0px;
 }
 
 div.post-content-preview {
