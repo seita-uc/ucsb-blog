@@ -41,12 +41,20 @@
                 col-md-10 col-md-offset-1
                 post-container">
 
-        		{{ if eq .Params.showtoc false }}
-        		{{ else }}
-                        <header>
-                        <h2>TOC</h2>
-                        </header>
-                        {{.TableOfContents}}
+        		{{ if eq .Params.showtoc true }}
+                <section class="js-toc">
+                  <h2>目次</h2>
+                  <div class="toc">
+                    {{ .TableOfContents }}
+                  </div>
+                </section>
+
+                <script>
+                  var $tocPlace = $('#js-toc-place');
+                  if ($tocPlace.length === 1) {
+                    $('.js-toc').appendTo($tocPlace);
+                  }
+                </script>
         		{{ end }}
         		{{ .Content }}
         
