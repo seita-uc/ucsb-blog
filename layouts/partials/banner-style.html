@@ -4,5 +4,6 @@ header.intro-header{
     background: #0bd url('{{ if .Params.image }}{{ .Params.image | absURL }}{{ else }}{{ .Site.Params.header_image | absURL}}{{ end }}') no-repeat center center;
     background-blend-mode: multiply;
     background-size: cover;
+    background-position: 0px 60%;
 }
 </style>
