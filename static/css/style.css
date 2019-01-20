@@ -233,3 +233,9 @@ p.post-meta {
 .hidden_box ul {
   margin-bottom: 0px;
 }
+
+.sticky {
+    postion: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
