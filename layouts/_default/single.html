@@ -42,20 +42,9 @@
                 post-container">
 
         		{{ if eq .Params.showtoc true }}
-                <section class="js-toc">
-                  <h2>目次</h2>
-                  <div class="toc">
-                    {{ .TableOfContents }}
-                  </div>
-                </section>
-
-                <script>
-                  var $tocPlace = $('#js-toc-place');
-                  if ($tocPlace.length === 1) {
-                    $('.js-toc').appendTo($tocPlace);
-                  }
-                </script>
+                {{ partial "toc.html" . }}
         		{{ end }}
+
         		{{ .Content }}
         
                 {{ if .Site.Params.reward }}
