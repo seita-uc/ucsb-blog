@@ -229,3 +229,7 @@ p.post-meta {
     height: auto;
     opacity: 1;
 }
+
+.hidden_box ul {
+  margin-bottom: 0px;
+}
