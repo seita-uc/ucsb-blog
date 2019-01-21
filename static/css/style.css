@@ -12,6 +12,10 @@
     margin: 10px 0 0;
 }
 
+h2.subheading {
+        font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "游ゴシック体","Yu Gothic", YuGothic, Verdana, Meiryo, sans-serif;
+}
+
 h1, h2, h3, h4, h5, h6 {
     font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "游ゴシック体","Yu Gothic", YuGothic, Verdana, Meiryo, sans-serif;
   line-height: 1.7;
