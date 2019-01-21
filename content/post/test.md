@@ -9,7 +9,7 @@ tags:
   - しんのすけ
 categories: Life
 showtoc: false
-draft: false
+draft: true
 ---
 埼玉県春日部市を舞台にしんちゃんこと野原しんのすけとその家族を中心に巻き起こるドタバタコメディー。 
 
