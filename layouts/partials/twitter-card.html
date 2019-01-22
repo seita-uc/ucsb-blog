@@ -1,5 +1,4 @@
-{{ if .IsPage }}
-  {{ if isset .Params "image" }}
+{{ if (and (.IsPage) (isset .Params "image")) }}
   <!-- Twitter summary card with large image must be at least 280x150px -->
   <meta name="twitter:card" content="summary"/>
   <meta name="twitter:image:src" content="{{ .Params.image | absURL }}"/>
@@ -20,7 +19,6 @@
 {{ range .Site.Authors }}
 {{ with .twitter }}
 <meta name="twitter:creator" content="@{{ . }}"/>
-{{ end }}
 {{ end }}
 {{ end }}
 
