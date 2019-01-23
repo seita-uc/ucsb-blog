@@ -16,7 +16,7 @@ home = ["HTML", "RSS", "Algolia"]
 
 [params]
   header_image = "images/campus-lagoon.jpg"
-  SEOTitle = "UCSB Exchange blog"
+  SEOTitle = "UCSB留学ブログ"
   description = "UCSBに留学する日本人学生のブログ！"
   slogan = "UCSBに留学する日本人学生のブログ！"
   

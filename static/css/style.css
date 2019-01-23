@@ -125,18 +125,36 @@ h2.post-title {
     margin: 0;
 }
 
-.article-share-link {
-    float: right;
-    cursor: pointer;
-    padding-right: 10px;
-    display: inline;
+@media screen and (max-width: 559px) {
+    .article-share-link {
+        /*float: right;*/
+        cursor: pointer;
+        padding-right: 10px;
+        display: inline-block;
+        padding-top: 15px;
+        padding-bottom: 5px;
+    }
+    .post-footer {
+        padding: 5px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
 }
 
-.post-footer {
-    padding: 15px;
-    padding-left: 10px;
-    padding-right: 10px;
+@media screen and (min-width: 560px) {
+    .article-share-link {
+        float: right;
+        cursor: pointer;
+        padding-right: 10px;
+        display: inline;
+    }
+    .post-footer {
+        padding: 15px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
 }
+
 
 a.article-share-link {
     color: #999;

@@ -20,3 +20,7 @@ draft: true
 <font color="Lime">あああああ</font>
 
 {{< customImage "/images/alexandme.png" 452 >}}
+
+<iframe class="hatenablogcard" style="width:100%;height:155px;max-width:680px;" title="URLを記入するだけ！はてなブログカード風にWordpress記事も表示させるカスタマイズ方法" src="https://hatenablog-parts.com/embed?url=https://ucsb.tokyo/post/2019-01-14-ucsb%E3%81%AE%E5%9F%BA%E6%9C%AC%E6%83%85%E5%A0%B1/" width="300" height="150" frameborder="0" scrolling="no"></iframe>
+<iframe class="hatenablogcard" style="width:100%;height:155px;max-width:680px;" title="URLを記入するだけ！はてなブログカード風にWordpress記事も表示させるカスタマイズ方法" src="https://hatenablog-parts.com/embed?url=https://qiita.com/tkm_kj/items/409a8692ca56eb59cd75" width="300" height="150" frameborder="0" scrolling="no"></iframe>
+
