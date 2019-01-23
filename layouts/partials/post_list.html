@@ -29,7 +29,7 @@
         <p class="post-meta">
         Posted by {{ with .Params.author }}{{ . }}{{ else }}{{ .Site.Title }}{{ end }} {{ .Date.Format "Monday, January 2, 2006" }}
         </p>
-        <a class="article-share-link">
+        <a data-url="{{ .Permalink }}" data-id="{{ .UniqueID }}" class="article-share-link">
             <i class="fa fa-share"></i>
             share
         </a>
