@@ -16,9 +16,9 @@ home = ["HTML", "RSS", "Algolia"]
 
 [params]
   header_image = "images/campus-lagoon.jpg"
-  SEOTitle = "UCSB Exchange blog | UCSB 留学生ブログ"
-  description = "UCSB 留学生ブログ"
-  slogan = "UCSB 留学生ブログ"
+  SEOTitle = "UCSB Exchange blog"
+  description = "UCSBに留学する日本人学生のブログ！"
+  slogan = "UCSBに留学する日本人学生のブログ！"
   
   # ogpの情報
   author = "Seita"

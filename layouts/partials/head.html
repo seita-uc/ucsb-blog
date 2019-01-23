@@ -17,7 +17,7 @@
     {{ end }}
     <link rel="shortcut icon" href="{{ "images/favicon.ico" | relURL }}">
 
-    <title>{{ if .Title }}{{ .Title }}-{{ .Site.Params.SEOTitle }}{{ else }}{{ .Site.Params.SEOTitle }}{{ end }}</title>
+    <title>{{ .Site.Params.SEOTitle }}</title>
 
     <link rel="canonical" href="{{ .URL | relURL }}">
 
@@ -67,6 +67,7 @@
       {{ else }}
       <meta property="og:image" content="{{ index .Site.Params.Images 0 | absURL }}" />
       {{ end }}
+
     {{ template "_internal/opengraph.html" . }}
 
     <!-- Twitter Card -->
