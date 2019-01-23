@@ -22,7 +22,7 @@ home = ["HTML", "RSS", "Algolia"]
   
   # ogpの情報
   author = "Seita"
-  images = ["images/shinnosuke.jpg"]
+  images = ["images/campus-lagoon.jpg"]
 
   image_404 = "img/404-bg.jpg"
   title_404 = "page not found"
