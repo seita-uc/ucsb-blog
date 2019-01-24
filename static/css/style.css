@@ -28,11 +28,6 @@ h1, h2, h3, h4, h5, h6 {
   height: 354px;
 }
 
-.intro-header .post-heading {
-  padding: 60px 0px 55px;
-  height: 354px;
-}
-
 .sidebar-container {
   color: #bfbfbf;
   font-size: 14px;
@@ -48,18 +43,25 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 40px !important;
     font-weight: 500 !important;
   }
-
   .site-heading h1, .post-heading h1 {
     margin-top: 30px !important;
     font-size: 40px !important;
     font-weight: 500 !important;
   }
+  .intro-header .post-heading {
+      padding: 45px 0px 55px;
+      height: 354px;
+  }
 }
 
 @media screen and (min-width: 560px) {
   .site-heading h1, .post-heading h1 {
-    font-size: 50px !important;
+    font-size: 43px !important;
     font-weight: 700 !important;
+  }
+  .intro-header .post-heading {
+      padding: 60px 0px 55px;
+      height: 354px;
   }
 }
 
