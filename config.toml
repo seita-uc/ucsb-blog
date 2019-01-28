@@ -1,5 +1,4 @@
-# baseurl = "https://ucsb.tokyo/"
-baseurl = "https://seita-uc.github.io/ucsb-blog/"
+baseurl = "https://ucsb.tokyo/"
 title = "UCSB Exchange Blog"
 theme = "hugo-theme-cleanwhite"
 languageCode = "en-us"
