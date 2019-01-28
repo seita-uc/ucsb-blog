@@ -2,12 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>UCSB Exchange Blog</title>
-    <link>https://ucsb.tokyo/search/</link>
+    <link>https://seita-uc.github.io/ucsb-blog/search/</link>
     <description>Recent content on UCSB Exchange Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="https://ucsb.tokyo/search/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://seita-uc.github.io/ucsb-blog/search/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>
