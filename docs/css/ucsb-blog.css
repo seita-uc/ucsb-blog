@@ -1,0 +1,40 @@
+.intro-header .site-heading {
+  /*padding: 85px 0px 55px;*/
+  height: 354px;
+}
+
+.intro-header .post-heading {
+  padding: 60px 0px 55px;
+  height: 354px;
+}
+
+.sidebar-container {
+  color: #bfbfbf;
+  font-size: 14px;
+  margin-top: 30px;
+}
+
+@media screen and (max-width: 559px) {
+  .post-heading h1 {
+    font-size: 40px !important;
+    font-weight: 500 !important;
+  }
+
+  .site-heading h1, .post-heading h1 {
+    margin-top: 35px !important;
+    font-size: 45px !important;
+    font-weight: 500 !important;
+  }
+}
+
+@media screen and (min-width: 560px) {
+  .site-heading h1, .post-heading h1 {
+    font-size: 50px !important;
+    font-weight: 500 !important;
+  }
+}
+
+#disqus-comment div {
+  margin-top: 30px !important;
+} 
+
