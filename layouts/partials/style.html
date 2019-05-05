@@ -4,7 +4,7 @@
 {{ $huxBlogCSS := resources.Get "css/hux-blog.min.css" }}
 {{ $syntax := resources.Get "css/syntax.css" }}
 {{ $zanshang := resources.Get "css/zanshang.css" }}
-{{ $allCss := slice $personalStyle $disqus $bootstrap $huxBlogCSS $syntax $zanshang }}
+{{ $allCss := slice $disqus $bootstrap $huxBlogCSS $syntax $zanshang $personalStyle }}
 
 {{ $css := $allCss | resources.Concat "css/main.css" }}
 
