@@ -4,7 +4,11 @@
 {{ $huxBlogCSS := resources.Get "css/hux-blog.min.css" }}
 {{ $syntax := resources.Get "css/syntax.css" }}
 {{ $zanshang := resources.Get "css/zanshang.css" }}
-{{ $allCss := slice $disqus $bootstrap $huxBlogCSS $syntax $zanshang $personalStyle }}
+{{ $bulmaSass := resources.Get "bulma/bulma.sass" }}
+{{ $options := (dict "outputStyle" "nested" "includePaths" (slice "assets/bulma" "assets/bulma/sass" )) }}
+{{ $bulma := $bulmaSass | resources.ToCSS $options }}
+
+{{ $allCss := slice $disqus $bootstrap $huxBlogCSS $syntax $zanshang $bulma $personalStyle }}
 
 {{ $css := $allCss | resources.Concat "css/main.css" }}
 
