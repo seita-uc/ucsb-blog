@@ -11,8 +11,11 @@ paginate = 5 #frontpage pagination
 hasCJKLanguage = true
 summaryLength = 60
 
+[permalinks]
+  post = "/:year/:month/:day/:filename"
+
 [outputs]
-home = ["HTML", "RSS", "Algolia"]
+  home = ["HTML", "RSS", "Algolia"]
 
 [params]
   header_image = "images/campus-lagoon.jpg"
