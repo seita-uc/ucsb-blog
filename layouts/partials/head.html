@@ -3,7 +3,6 @@
   {{ if .Site.GoogleAnalytics }}
   {{ template "_internal/google_analytics_async.html" . }}
   {{ end }}
-
     <meta name="google-site-verification" content="9vIieCe-Qpd78QOmBl63rGtIVbhY6sYyuxX3j8XWBA4" />
     <meta name="baidu-site-verification" content="LRrmH41lz7" />
     <meta charset="utf-8">
@@ -16,61 +15,19 @@
     <meta name="description" content="{{ .Site.Params.description }}">
     {{ end }}
     <link rel="shortcut icon" href="{{ "images/favicon.png" | relURL }}">
-
     <title>{{ .Site.Params.SEOTitle }}</title>
-
     <link rel="canonical" href="{{ .URL | relURL }}">
-
-    <link rel="stylesheet" href="{{ "css/iDisqus.min.css" | relURL }}"/>
-	
-    <!-- Bootstrap Core CSS -->
-    <link rel="stylesheet" href="{{ "css/bootstrap.min.css" | relURL }}">
-
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="{{ "css/hux-blog.min.css" | relURL }}">
-
-    <!-- Pygments Github CSS -->
-    <link rel="stylesheet" href="{{ "css/syntax.css" | relURL }}">
-
-    <!-- zangshang CSS -->
-    <link rel="stylesheet" href="{{ "css/zanshang.css" | relURL }}">
-
-    <!-- style CSS -->
-    <link rel="stylesheet" href="{{ "css/style.css" | relURL }}">
-
-    <!-- ucsb-blog CSS -->
-    <!--<link rel="stylesheet" href="{{ "css/ucsb-blog.css" | relURL }}">-->
-
-    <!-- Custom Fonts -->
-    <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <!--
-    <script src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
-    -->
-    <!-- jQuery -->
-    <script src="{{ "js/jquery.min.js" | relURL }}"></script>
-    
-    <!-- Bootstrap Core JavaScript -->
-    <script src="{{ "js/bootstrap.min.js" | relURL }}"></script>
-    
-    <!-- Custom Theme JavaScript -->
-    <script src="{{ "js/hux-blog.min.js" | relURL }}"></script>
-
-    <!-- Custom JavaScript -->
-    <script src="{{ "js/custom.js" | relURL }}"></script>
-
     <!-- Netlify CDN -->
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-
     <!-- Open Graph -->
       {{ if (isset .Params "image") }}
       <meta property="og:image" content="{{ .Params.image | absURL }}" />
       {{ else }}
       <meta property="og:image" content="{{ index .Site.Params.Images 0 | absURL }}" />
       {{ end }}
-
     {{ template "_internal/opengraph.html" . }}
-
     <!-- Twitter Card -->
     {{ partial "twitter-card" . }}
-
+    <!-- CSS and JS -->
+    {{ partial "style" . }}
 </head>

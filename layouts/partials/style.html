@@ -1,0 +1,35 @@
+{{ $personalStyle := resources.Get "css/style.css" }}
+{{ $disqus := resources.Get "css/iDisqus.min.css" }}
+{{ $bootstrap := resources.Get "css/bootstrap.min.css" }}
+{{ $huxBlogCSS := resources.Get "css/hux-blog.min.css" }}
+{{ $syntax := resources.Get "css/syntax.css" }}
+{{ $zanshang := resources.Get "css/zanshang.css" }}
+{{ $allCss := slice $personalStyle $disqus $bootstrap $huxBlogCSS $syntax $zanshang }}
+
+{{ $css := $allCss | resources.Concat "css/main.css" }}
+
+<link href="{{ $css.Permalink }}" rel="stylesheet"/>
+
+<!-- Custom Fonts -->
+<link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+<!-- jQuery -->
+
+<!-- Bootstrap Core JavaScript -->
+<script src="{{ "" | relURL }}"></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="{{ "" | relURL }}"></script>
+
+<!-- Custom JavaScript -->
+<script src="{{ "" | relURL }}"></script>
+
+{{ $jquery := resources.Get "js/jquery.min.js" }}
+{{ $bootstrapJs := resources.Get "js/bootstrap.min.js" }}
+{{ $huxBlogJs := resources.Get "js/hux-blog.min.js" }}
+{{ $custom := resources.Get "js/custom.js" }}
+
+{{ $js := slice $jquery $bootstrapJs $huxBlogJs $custom | resources.Concat "js/bundle.js" }}
+
+<script src="{{ $js.Permalink }}"></script>
+
