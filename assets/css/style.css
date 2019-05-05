@@ -91,7 +91,7 @@ h1, h2, h3, h4, h5, h6 {
 
 div.post-preview {
     border: solid 1px;/*線*/
-    border-color: #bfbfbf;
+    border-color: #f5f5f5;
     border-radius: 8px;/*角の丸み*/
     margin-bottom: 25px;
     padding-top: 0px;

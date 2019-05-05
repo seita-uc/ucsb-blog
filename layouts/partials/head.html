@@ -1,8 +1,8 @@
 <head>
 
-  {{ if .Site.GoogleAnalytics }}
-  {{ template "_internal/google_analytics_async.html" . }}
-  {{ end }}
+    {{ if .Site.GoogleAnalytics }}
+    {{ template "_internal/google_analytics_async.html" . }}
+    {{ end }}
     <meta name="google-site-verification" content="9vIieCe-Qpd78QOmBl63rGtIVbhY6sYyuxX3j8XWBA4" />
     <meta name="baidu-site-verification" content="LRrmH41lz7" />
     <meta charset="utf-8">
@@ -20,14 +20,22 @@
     <!-- Netlify CDN -->
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
     <!-- Open Graph -->
-      {{ if (isset .Params "image") }}
-      <meta property="og:image" content="{{ .Params.image | absURL }}" />
-      {{ else }}
-      <meta property="og:image" content="{{ index .Site.Params.Images 0 | absURL }}" />
-      {{ end }}
+    {{ if (isset .Params "image") }}
+    <meta property="og:image" content="{{ .Params.image | absURL }}" />
+    {{ else }}
+    <meta property="og:image" content="{{ index .Site.Params.Images 0 | absURL }}" />
+    {{ end }}
     {{ template "_internal/opengraph.html" . }}
     <!-- Twitter Card -->
     {{ partial "twitter-card" . }}
     <!-- CSS and JS -->
     {{ partial "style" . }}
+
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: "ca-pub-6760815152083080",
+            enable_page_level_ads: true
+        });
+    </script>
 </head>
