@@ -365,13 +365,3 @@ a.article-share-link {
     text-decoration: none;
     /*font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "游ゴシック体","Yu Gothic", YuGothic, Verdana, Meiryo, sans-serif !important;*/
 }
-
-iframe {
-    box-shadow: 0px 10px 30px rgba(0, 0, 0, .06);
-    padding: 10px 5px !important;
-    -moz-border-radius: 0px;
-    -webkit-border-radius: 7px 7px 7px 7px;
-    border-radius: 7px 7px 7px 7px; 
-    overflow:	hidden;
-}
-
