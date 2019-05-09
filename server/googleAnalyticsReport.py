@@ -4,10 +4,10 @@ from oauth2client.service_account import ServiceAccountCredentials
 import simplejson as json
 
 SCOPES = ['https://www.googleapis.com/auth/analytics.readonly']
-KEY_FILE_LOCATION = './service_account/key.json'
+KEY_FILE_LOCATION = './keys/service_account.json'
 VIEW_ID = '187987801'
 
-def initialize_analyticsreporting():
+def initialize_analytics_reporting():
     credentials = ServiceAccountCredentials.from_json_keyfile_name(
         KEY_FILE_LOCATION, SCOPES
     )
@@ -28,9 +28,10 @@ def get_report(analytics):
         }
     ).execute()
 
-def return_analytics_report(response):
+def return_analytics_report():
+    analytics = initialize_analytics_reporting()
+    response = get_report(analytics)
     result = {}
-    resp = Response()
     for report in response.get('reports', []):
         columnHeader = report.get('columnHeader', {})
         dimensionHeaders = columnHeader.get('dimensions', [])
@@ -46,6 +47,8 @@ def return_analytics_report(response):
                     if dimension == '(not set)':
                         dimension = 'Other'
                     result.update({ dimension: value })
+
+    resp = Response()
     resp.status_code = 500
     resp.set_data(json.dumps(result))
     return resp

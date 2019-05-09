@@ -7,9 +7,7 @@ if __name__ == '__main__':
 
     @app.route('/googleAnalyticsReport', methods=['GET'])
     def analyticsReport():
-        analytics = initialize_analyticsreporting()
-        response = get_report(analytics)
-        return return_analytics_report(response)
+        return return_analytics_report()
 
     @app.route('/googleAdSenseReport', methods=['GET'])
     def adSenseReport():
