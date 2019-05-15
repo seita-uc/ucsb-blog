@@ -43,11 +43,6 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 700;
 }
 
-.intro-header .site-heading {
-    /*padding: 85px 0px 55px;*/
-    height: 354px;
-}
-
 .sidebar-container {
     color: #bfbfbf;
     font-size: 14px;
@@ -75,10 +70,6 @@ h1, h2, h3, h4, h5, h6 {
         font-size: 40px !important;
         font-weight: 500 !important;
     }
-    .intro-header .post-heading {
-        padding: 45px 0px 55px;
-        height: 354px;
-    }
 }
 
 @media screen and (min-width: 560px) {
@@ -95,10 +86,6 @@ h1, h2, h3, h4, h5, h6 {
     .site-heading h1, .post-heading h1 {
         font-size: 43px !important;
         font-weight: 700 !important;
-    }
-    .intro-header .post-heading {
-        padding: 60px 0px 55px;
-        height: 354px;
     }
 }
 
@@ -170,11 +157,10 @@ h3.post-subtitle {
 }
 
 @media screen and (max-width: 559px) {
-    div.container {
-        margin-top: 75px;
-    }
-    div.row {
-        /*margin-top: 75px;*/
+    header.intro-header {
+        height: 75px;
+        background-color: white;
+        margin: 0;
     }
     div.row-search {
         margin-top: 25px;
@@ -182,11 +168,10 @@ h3.post-subtitle {
 }
 
 @media screen and (min-width: 560px) {
-    div.container {
-        margin-top: 100px;
-    }
-    div.row {
-        /*margin-top: 100px;*/
+    header.intro-header {
+        height: 100px;
+        background-color: white;
+        margin: 0;
     }
     div.row-search {
         margin-top: 10px;
