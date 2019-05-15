@@ -170,8 +170,11 @@ h3.post-subtitle {
 }
 
 @media screen and (max-width: 559px) {
-    div.row {
+    div.container {
         margin-top: 75px;
+    }
+    div.row {
+        /*margin-top: 75px;*/
     }
     div.row-search {
         margin-top: 25px;
@@ -179,8 +182,11 @@ h3.post-subtitle {
 }
 
 @media screen and (min-width: 560px) {
-    div.row {
+    div.container {
         margin-top: 100px;
+    }
+    div.row {
+        /*margin-top: 100px;*/
     }
     div.row-search {
         margin-top: 10px;
