@@ -169,7 +169,7 @@ h3.post-subtitle {
 
 @media screen and (min-width: 560px) {
     header.intro-header {
-        height: 100px;
+        height: 80px;
         background-color: white;
         margin: 0;
     }
