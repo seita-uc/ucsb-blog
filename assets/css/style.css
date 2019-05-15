@@ -1,6 +1,26 @@
+.body {
+    background-color: #565a5f !important;
+}
+
+.navbar-custom .nav li a {
+    font-size: 16px;
+    line-height: 25px;
+}
+
 .post-title, .post-content-preview, p, span {
     font-family: -apple-system, "Helvetica Neue", "Yu Gothic", "游ゴシック体",YuGothic, Verdana, Meiryo, sans-serif;
 }
+
+.tags a, .tags .tag {
+    color: #bfbfbf;
+    border: 1px solid #bfbfbf;
+}
+
+.tags a:hover, .tags .tag:hover {
+    border-color: #0085a1;
+    color: #0085a1;
+}
+
 
 .intro-header .site-heading .subheading, .intro-header .page-heading .subheading {
     font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "游ゴシック体","Yu Gothic", YuGothic, Verdana, Meiryo, sans-serif;
@@ -39,6 +59,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media screen and (max-width: 559px) {
+    .navbar-custom {
+        background-color: rgba(255, 255, 255, 0.8);
+        border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    }
+    .navbar-custom a, .navbar-brand a {
+        color: rgb(64, 64, 64) !important;
+    }
     .post-heading h1 {
         font-size: 40px !important;
         font-weight: 500 !important;
@@ -55,6 +82,16 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media screen and (min-width: 560px) {
+    .navbar-custom {
+        background-color: rgba(255, 255, 255, 0.8);
+        border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    }
+    .navbar-custom a, .navbar-brand a {
+        color: rgb(64, 64, 64) !important;
+    }
+    .navbar-custom.is-fixed {
+        top: -67px;
+    }
     .site-heading h1, .post-heading h1 {
         font-size: 43px !important;
         font-weight: 700 !important;
@@ -134,7 +171,7 @@ h3.post-subtitle {
 
 @media screen and (max-width: 559px) {
     div.row {
-        margin-top: 25px;
+        margin-top: 75px;
     }
     div.row-search {
         margin-top: 25px;
@@ -143,7 +180,7 @@ h3.post-subtitle {
 
 @media screen and (min-width: 560px) {
     div.row {
-        margin-top: 10px;
+        margin-top: 100px;
     }
     div.row-search {
         margin-top: 10px;
