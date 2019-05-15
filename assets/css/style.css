@@ -54,11 +54,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media screen and (max-width: 559px) {
-    .navbar-custom {
+    .navbar {
         background-color: rgba(255, 255, 255, 0.8);
         border-bottom: 1px solid rgba(0, 0, 0, 0.05);
     }
-    .navbar-custom a, .navbar-brand a {
+    .navbar a, .navbar-brand a {
         color: rgb(64, 64, 64) !important;
     }
     .post-heading h1 {
@@ -73,15 +73,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media screen and (min-width: 560px) {
-    .navbar-custom {
+    .navbar {
         background-color: rgba(255, 255, 255, 0.8);
         border-bottom: 1px solid rgba(0, 0, 0, 0.05);
     }
-    .navbar-custom a, .navbar-brand a {
+    .navbar a, .navbar-brand a {
         color: rgb(64, 64, 64) !important;
-    }
-    .navbar-custom.is-fixed {
-        top: -67px;
     }
     .site-heading h1, .post-heading h1 {
         font-size: 43px !important;

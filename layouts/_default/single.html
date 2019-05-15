@@ -17,12 +17,11 @@
 <!-- Post Content -->
 <article>
     <div class="container">
-        <div class="row">
+        <div class="columns">
 
-            <!-- Post Container -->
             <div class="
-                col-lg-8 col-lg-offset-2
-                col-md-10 col-md-offset-1
+                column
+                is-half
                 post-container">
 
                 <div class="tags">
@@ -73,28 +72,28 @@
               {{ partial "comments.html" . }}
 
             </div>
-            <!-- Sidebar Container -->
+
+            <!--sidebar-container-->
             <div class="
-                col-lg-8 col-lg-offset-2
-                col-md-10 col-md-offset-1
-                sidebar-container">
+              column
+              sticky">
 
                 <!-- Featured Tags -->
                 {{ if .Site.Params.featured_tags }}
-                <!--<section>-->
-                    <!--<hr class="hidden-sm hidden-xs">-->
-                    <!--<h5><a href="/tags/">FEATURED TAGS</a></h5>-->
-                    <!--<div class="tags">-->
-                        <!--{{ $featured_condition_size := .Site.Params.featured_condition_size }}-->
-                        <!--{{ range $name, $taxonomy := .Site.Taxonomies.tags }}-->
-                        <!--{{ if gt (len $taxonomy.Pages) $featured_condition_size }}-->
-                        <!--<a href="{{ "/tags/" | relLangURL }}{{ $name | urlize }}" title="{{ $name }}">-->
-                        <!--{{ $name }}-->
-                        <!--</a>-->
-                        <!--{{ end }}-->
-                        <!--{{ end }}-->
-                    <!--</div>-->
-                <!--</section>-->
+                <section>
+                    <hr class="hidden-sm hidden-xs">
+                    <h5><a href="/tags/">FEATURED TAGS</a></h5>
+                    <div class="tags">
+                        {{ $featured_condition_size := .Site.Params.featured_condition_size }}
+                        {{ range $name, $taxonomy := .Site.Taxonomies.tags }}
+                        {{ if gt (len $taxonomy.Pages) $featured_condition_size }}
+                        <a href="{{ "/tags/" | relLangURL }}{{ $name | urlize }}" title="{{ $name }}">
+                        {{ $name }}
+                        </a>
+                        {{ end }}
+                        {{ end }}
+                    </div>
+                </section>
                 {{ end }}
 
                 <!-- Friends Blog -->

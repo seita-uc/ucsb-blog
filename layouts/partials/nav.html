@@ -1,51 +1,43 @@
 <!-- Navigation -->
-<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
-    <div class="container-fluid">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header page-scroll">
-            <button type="button" class="navbar-toggle">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="/">{{ .Site.Title }}</a>
+<nav class="navbar is-transparent is-fixed-top" role="navigation">
+    <!--<div class="container-fluid">-->
+        <!--<div class="navbar-header page-scroll">-->
+            <!--<button type="button" class="navbar-toggle">-->
+                <!--<span class="sr-only">Toggle navigation</span>-->
+                <!--<span class="icon-bar"></span>-->
+                <!--<span class="icon-bar"></span>-->
+                <!--<span class="icon-bar"></span>-->
+            <!--</button>-->
+            <!--<a class="navbar-brand" href="/">{{ .Site.Title }}</a>-->
+        <!--</div>-->
+        <div class="navbar-brand">
+            <a class="navbar-item" href="/">
+                <img src="{{ "images/favicon.png" | absURL }}" height="50px" width="auto">
+            </a>
+            <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
         </div>
 
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <!-- Known Issue, found by Hux:
-            <nav>'s height woule be hold on by its content.
-            so, when navbar scale out, the <nav> will cover tags.
-            also mask any touch event of tags, unfortunately.
-        -->
-        <div id="huxblog_navbar">
-            <div class="navbar-collapse">
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a href="/">Home</a>
-                    </li>
-                    {{ range $name, $taxonomy := .Site.Taxonomies.categories }}
-                    <li>
-                        <a href="{{ "categories/" | relLangURL }}{{ $name | urlize }}">{{ $name }}</a>
-                    </li>
-                    {{ end }}
+        <div class="navbar-menu">
+            <div class="navbar-start">
+            <a class="navbar-item" href="/">{{ .Site.Title }}</a>
 
-                    {{ if .Site.Params.about_me }}
-		     <li>
-                        <a href="{{ "about" | relURL }}">ABOUT</a>
-		    </li>
-                    {{ end }}
-                    {{ if .Site.Params.algolia_search }}
-		    <li>
-                        <a href="{{ "search" | relURL }}">SEARCH <img src="{{ "images/search.png" | relURL }}" height="15" style="cursor: pointer;"></a>
-		    </li>
-                    {{ end }}
-                </ul>
+            </div>
+            <div class="navbar-end">
+                {{ range $name, $taxonomy := .Site.Taxonomies.categories }}
+                <!--<a class="navbar-item" href="{{ "categories/" | relLangURL }}{{ $name | urlize }}">{{ $name }}</a>-->
+                {{ end }}
+                {{ if .Site.Params.about_me }}
+                <a class="navbar-item" href="{{ "about" | relURL }}">ABOUT</a>
+                {{ end }}
+                {{ if .Site.Params.algolia_search }}
+                <a class="navbar-item" href="{{ "search" | relURL }}">SEARCH</a>
+                {{ end }}
             </div>
         </div>
-        <!-- /.navbar-collapse -->
-    </div>
-    <!-- /.container -->
 </nav>
 <script>
     // Drop Bootstarp low-performance Navbar
