@@ -16,7 +16,7 @@
 {{ define "main" }}
 <!-- Post Content -->
 <div class="columns has-navbar-fixed-top">
-    <article class="column is-6 is-offset-2 post-container">
+    <article class="column is-6 is-offset-3 post-container">
         <div class="tags">
             {{ range .Params.tags }}
             <a class="tag" href="{{ "/tags/" | relLangURL }}{{ . | urlize }}" title="{{ . }}">
