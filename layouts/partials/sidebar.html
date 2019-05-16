@@ -1,5 +1,5 @@
 <!-- Sidebar Container -->
-<div class="sidebar {{ if .IsHome }} sticky {{ end }}">
+<div class="{{ if .IsHome }} sticky {{ end }}">
     <!-- Featured Tags -->
     {{ if .Site.Params.featured_tags }}
     <section>
@@ -16,6 +16,30 @@
             {{ end }}
         </div>
     </section>
+    {{ end }}
+
+    {{ if not .IsHome }}
+    <section>
+        <hr>
+        <h5>RELATED ARTICLES</h5>
+        {{ $related := .Site.RegularPages.Related . | first 8 }}
+        {{ with $related }}
+        {{ range . }}
+        <div class="post-preview">
+            <a href="{{ .Permalink }}">
+                {{ if and (isset .Params "image") (not (eq .Params.image "")) }}
+                <div class="eyecatch-side">
+                    <img src="{{ .Params.image | absURL }}" class="article-banner">
+                </div>
+                {{ end }}
+                <h1 class="post-title-side is-size-3">
+                    {{ .Title }}
+                </h1>
+            </a>
+        </div>
+        {{ end }}
+    </section>
+    {{ end }}
     {{ end }}
 
     <!-- Instagram -->
