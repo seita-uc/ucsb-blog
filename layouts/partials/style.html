@@ -13,8 +13,8 @@
 {{ $allCss := slice $disqus $bootstrap $huxBlogCSS $syntax $zanshang $personalStyle }}
 {{ $css := $allCss | resources.Concat "css/main.css" }}
 
-<link href="{{ $css.Permalink }}" rel="stylesheet" type="text/css"/>
 <link href="{{ $bulma.Permalink }}" rel="stylesheet" type="text/css"/>
+<link href="{{ $css.Permalink }}" rel="stylesheet" type="text/css"/>
 
 <!-- Custom Fonts -->
 <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">

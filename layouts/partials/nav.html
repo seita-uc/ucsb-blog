@@ -1,43 +1,33 @@
 <!-- Navigation -->
-<nav class="navbar is-transparent is-fixed-top" role="navigation">
-    <!--<div class="container-fluid">-->
-        <!--<div class="navbar-header page-scroll">-->
-            <!--<button type="button" class="navbar-toggle">-->
-                <!--<span class="sr-only">Toggle navigation</span>-->
-                <!--<span class="icon-bar"></span>-->
-                <!--<span class="icon-bar"></span>-->
-                <!--<span class="icon-bar"></span>-->
-            <!--</button>-->
-            <!--<a class="navbar-brand" href="/">{{ .Site.Title }}</a>-->
-        <!--</div>-->
-        <div class="navbar-brand">
-            <a class="navbar-item" href="/">
-                <img src="{{ "images/favicon.png" | absURL }}" height="50px" width="auto">
-            </a>
-            <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-            </a>
-        </div>
+<nav class="navbar is-fixed-top" role="navigation">
+    <div class="navbar-brand">
+        <a class="navbar-item" href="/">
+            <img src="{{ "images/favicon.png" | absURL }}"  width="auto" style="border-radius:50px 50px;cursor:pointer;">
+        </a>
+        <a class="navbar-item" href="/">
+            <img src="{{ "images/ucsb_exchange_blog_logo.png" | absURL }}" style="cursor:pointer;">
+        </a>
+    </div>
 
-        <div class="navbar-menu">
-            <div class="navbar-start">
-            <a class="navbar-item" href="/">{{ .Site.Title }}</a>
-
-            </div>
-            <div class="navbar-end">
-                {{ range $name, $taxonomy := .Site.Taxonomies.categories }}
-                <!--<a class="navbar-item" href="{{ "categories/" | relLangURL }}{{ $name | urlize }}">{{ $name }}</a>-->
-                {{ end }}
-                {{ if .Site.Params.about_me }}
-                <a class="navbar-item" href="{{ "about" | relURL }}">ABOUT</a>
-                {{ end }}
-                {{ if .Site.Params.algolia_search }}
-                <a class="navbar-item" href="{{ "search" | relURL }}">SEARCH</a>
-                {{ end }}
-            </div>
+    <!--<a role="button" class="navbar-burger" aria-label="menu" aria-expanded="true">-->
+        <!--<span aria-hidden="true"></span>-->
+        <!--<span aria-hidden="true"></span>-->
+        <!--<span aria-hidden="true"></span>-->
+    <!--</a>-->
+    <div class="navbar-menu">
+        <div class="navbar-end">
+            <a class="navbar-item has-text-weight-bold" href="{{ "/" | relURL }}">HOME</a>
+            {{ range $name, $taxonomy := .Site.Taxonomies.categories }}
+            <!--<a class="navbar-item" href="{{ "categories/" | relLangURL }}{{ $name | urlize }}">{{ $name }}</a>-->
+            {{ end }}
+            {{ if .Site.Params.about_me }}
+            <a class="navbar-item has-text-weight-bold" href="{{ "about" | relURL }}">ABOUT</a>
+            {{ end }}
+            {{ if .Site.Params.algolia_search }}
+            <a class="navbar-item has-text-weight-bold" href="{{ "search" | relURL }}">SEARCH</a>
+            {{ end }}
         </div>
+    </div>
 </nav>
 <script>
     // Drop Bootstarp low-performance Navbar

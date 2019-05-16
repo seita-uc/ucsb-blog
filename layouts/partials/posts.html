@@ -1,0 +1,20 @@
+<div class="columns is-hidden-mobile has-navbar-fixed-top">
+    <div class="column is-6-desktop is-offset-2-desktop post-container">
+        {{ partial "post_list.html" . }}
+        {{ partial "pagination.html" . }}
+    </div>
+    <div class="column is-2-desktop side">
+        {{ partial "sidebar.html" . }}
+    </div>
+</div>
+
+<div class="columns has-navbar-fixed-top is-hidden-desktop is-centered">
+    <div class="column post-container">
+        {{ partial "post_list.html" . }}
+        {{ partial "pagination.html" . }}
+    </div>
+    <div class="column">
+        {{ partial "sidebar.html" . }}
+    </div>
+</div>
+
