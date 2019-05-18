@@ -11,14 +11,6 @@ body {
     font-family: -apple-system, "Helvetica Neue", "Yu Gothic", "游ゴシック体",YuGothic, Verdana, Meiryo, sans-serif;
 }
 
-.post-container {
-    padding: 3rem 3rem;
-    -moz-border-radius: 0px;
-    -webkit-border-radius: 7px 7px 7px 7px;
-    border-radius: 7px 7px 7px 7px; 
-    margin-top: 10px;
-}
-
 .tags a, .tags .tag {
     color: #bfbfbf;
     border: 1px solid #bfbfbf;
@@ -98,6 +90,12 @@ article {
         margin-right: 10%;
         background-color: white;
     }
+    .post-container {
+        -moz-border-radius: 0px;
+        -webkit-border-radius: 7px 7px 7px 7px;
+        border-radius: 7px 7px 7px 7px; 
+        margin-top: 10px;
+    }
 }
 
 @media screen and (min-width: 560px) {
@@ -126,6 +124,13 @@ article {
         /*height: 700px;*/
         width: 100%;
         background-color: white;
+    }
+    .post-container {
+        padding: 3rem 3rem;
+        -moz-border-radius: 0px;
+        -webkit-border-radius: 7px 7px 7px 7px;
+        border-radius: 7px 7px 7px 7px; 
+        margin-top: 10px;
     }
 }
 
