@@ -83,7 +83,7 @@ article {
         margin: 0rem 1rem;
     }
     div.post-preview {
-        /*margin-bottom: 25px;*/
+        margin-bottom: 25px;
         /*padding-bottom: 5%;*/
     }
     iframe#e847a506e55f7a050fd44381637208abf3e8a6ba6e07d638df0584c5269ca401 {
@@ -131,6 +131,10 @@ article {
     div.post-preview {
         margin-bottom: 25px;
         padding-bottom: 5%;
+    }
+    section .post-preview {
+        margin-bottom: 25px;
+        padding-bottom: 0%;
     }
     iframe#e847a506e55f7a050fd44381637208abf3e8a6ba6e07d638df0584c5269ca401 {
         /*height: 700px;*/
@@ -310,13 +314,17 @@ h3.post-subtitle {
     transition: 0.5s;
 }
 .hidden_box input:checked ~ .hidden_show {
-    padding: 1em 0;
+    padding: 1em 3rem;
     height: auto;
     opacity: 1;
 }
 
 .hidden_box ul {
     margin-bottom: 0px;
+}
+
+#TableOfContents li {
+    list-style-type: circle;
 }
 
 @media screen and (max-width: 460px) {
