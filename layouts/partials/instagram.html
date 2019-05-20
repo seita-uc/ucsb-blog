@@ -3,17 +3,14 @@
 <!--<script src="https://instawidget.net/js/instawidget.js?u=e847a506e55f7a050fd44381637208abf3e8a6ba6e07d638df0584c5269ca401&width=100%"></script>-->
 <iframe id="e847a506e55f7a050fd44381637208abf3e8a6ba6e07d638df0584c5269ca401" class="is-centered"style="border:0;padding:0;" scrolling="no" frameborder="no" src="https://instawidget.net/embed?u=e847a506e55f7a050fd44381637208abf3e8a6ba6e07d638df0584c5269ca401"></iframe>
 <script>
-    const instaWidgetId = "e847a506e55f7a050fd44381637208abf3e8a6ba6e07d638df0584c5269ca401";
-    //$("#" + instaWidgetId).on("load", function() {
-    //    const widgetHeight = document.getElementById(instaWidgetId).style.height;
-    //    document.getElementById(instaWidgetId).style.height = widgetHeight + 10 + "px";
-    //    console.log(widgetHeight);
-    //});
     window.addEventListener("message", instawidget_adjust_height, false);
     function instawidget_adjust_height(e) { 
+        const instaWidgetId = "e847a506e55f7a050fd44381637208abf3e8a6ba6e07d638df0584c5269ca401";
         if (e.origin === "http://instawidget.net" ||
             e.origin === "https://instawidget.net") {
             document.getElementById(instaWidgetId).style.height = e.data + 20 + "px"; 
+            console.log(e.data)
+            console.log(document.getElementById(instaWidgetId).style.height)
         }
     }
 </script>
