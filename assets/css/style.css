@@ -83,10 +83,10 @@ article {
         margin: 10px 25px;
     }
     iframe#e847a506e55f7a050fd44381637208abf3e8a6ba6e07d638df0584c5269ca401 {
-        height: 600px;
-        width: 80%;
-        margin-left: 10%;
-        margin-right: 10%;
+        /*height: 100%;*/
+        width: 100%;
+        /*margin-left: 2.5%;*/
+        /*margin-right: 2.5%;*/
         background-color: white;
     }
     article.post-container {
