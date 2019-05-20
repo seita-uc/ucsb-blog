@@ -7,7 +7,7 @@ languageCode = "en-us"
 disqusShortname = "ucsb-blog"
 googleAnalytics = "UA-132442136-1"
 preserveTaxonomyNames = true
-paginate = 5 #frontpage pagination
+paginate = 6 #frontpage pagination
 hasCJKLanguage = true
 summaryLength = 60
 

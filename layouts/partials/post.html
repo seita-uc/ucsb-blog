@@ -1,0 +1,32 @@
+<div class="post-preview">
+    <a href="{{ .Permalink }}">
+        {{ if and (isset .Params "image") (not (eq .Params.image "")) }}
+        <div class="eyecatch">
+            <!--<a href="{{ .Permalink }}" itemprop="url">-->
+            <img src="{{ .Params.image | absURL }}" class="article-banner">
+            <!--</a>-->
+        </div>
+        {{ end }}
+
+        <h2 class="post-title">
+            {{ .Title }}
+        </h2>
+        {{with .Params.subtitle }}
+        <h3 class="post-subtitle">
+            {{ . }}
+        </h3>
+        {{ end }}
+        <!--<div class="post-content-preview">-->
+        <!--{{ with .Description }}-->
+        <!--{{ . }}-->
+        <!--{{ else }}-->
+        <!--{{ .Summary}}-->
+        <!--{{ end }}-->
+        <!--</div>-->
+        <div class="post-footer" >
+            <p class="post-meta">
+            {{ .Date.Format " 2006, January, 2" }}
+            </p>
+        </div>
+    </a>
+</div>
