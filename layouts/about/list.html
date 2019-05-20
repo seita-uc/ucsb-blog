@@ -1,34 +1,23 @@
 {{ define "main" }}
 <!-- Post Content -->
-<article>
-    <div class="container">
-        <div class="row">
-
-            <!-- Post Container -->
-            <div class="
-              col-lg-8 col-lg-offset-1
-              col-md-8 col-md-offset-1
-              col-sm-12
-              col-xs-12
-              post-container
-            ">
-
-        		{{ .Content }}
-
-            </div>
-            <!-- Sidebar Container -->
-            <!--<div class="-->
-                <!--col-lg-8 col-lg-offset-2-->
-                <!--col-md-10 col-md-offset-1-->
-                <!--sidebar-container">-->
-
-            {{ partial "sidebar.html" . }}
-
-            <!--</div>-->
-        </div>
+<div class="columns is-hidden-mobile has-navbar-fixed-top">
+    <article class="column is-6-desktop is-offset-2-desktop post-container">
+        {{ .Content }}
+    </article>
+    <div class="column is-2-desktop side">
+        {{ partial "sidebar.html" . }}
     </div>
-</article>
+</div>
 
+<div class="columns has-navbar-fixed-top is-hidden-desktop is-centered">
+    <article class="column post-container">
+        {{ .Content }}
+    </article>
+    <div class="column">
+        {{ partial "sidebar.html" . }}
+    </div>
+</div>
 {{ end }}
+
 
 
