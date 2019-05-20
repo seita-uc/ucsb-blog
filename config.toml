@@ -12,7 +12,7 @@ hasCJKLanguage = true
 summaryLength = 60
 
 [permalinks]
-  post = "/:year/:month/:day/:filename"
+  post = "posts/:filename"
 
 [outputs]
   home = ["HTML", "RSS", "Algolia"]
