@@ -327,6 +327,11 @@ h3.post-subtitle {
     list-style-type: circle;
 }
 
+#TableOfContents li ul li {
+    list-style-type: disc;
+    margin-left: 1rem;
+}
+
 @media screen and (max-width: 460px) {
     .article-share-link {
         /*float: right;*/
