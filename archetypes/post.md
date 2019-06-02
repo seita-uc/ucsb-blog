@@ -2,6 +2,7 @@
 layout: blog
 title: 
 subtitle: 
+description: 
 date: 
 author: 
 image: /images/
