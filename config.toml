@@ -2,7 +2,7 @@ baseurl = "https://ucsb.tokyo/"
 title = "UCSB Exchange Blog"
 theme = "hugo-theme-cleanwhite"
 languageCode = "en-us"
-disableKinds = ["taxonomyTerm", "taxonomy"]
+disableKinds = []
 # Enable comments by entering your Disqus shortname
 disqusShortname = "ucsb-blog"
 googleAnalytics = "UA-132442136-1"
