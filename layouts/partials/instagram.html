@@ -8,7 +8,11 @@
         const instaWidgetId = "e847a506e55f7a050fd44381637208abf3e8a6ba6e07d638df0584c5269ca401";
         if (e.origin === "http://instawidget.net" ||
             e.origin === "https://instawidget.net") {
-            document.getElementById(instaWidgetId).style.height = e.data + 20 + "px"; 
+            document.getElementById(instaWidgetId).style.height = e.data + 20 + "px";
+            if(e.data > 1000) {
+                document.getElementById(instaWidgetId).style.height = "500px";
+
+            }
             console.log(e.data)
             console.log(document.getElementById(instaWidgetId).style.height)
         }
